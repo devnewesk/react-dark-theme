@@ -1,0 +1,72 @@
+:root {
+  --text-primary: #1e0303;
+  --body-background: #fff;
+}
+[data-theme="dark"] {
+  --text-primary: #eae2e2;
+  --body-background: #170202;
+}
+.text {
+  color: var(--text-primary);
+}
+.app {
+  background-color: var(--body-background);
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.toggle {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  z-index: 10;
+}
+.toggle.active {
+  color: yellow;
+  font-weight: 900;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+}
+input[type="text"],
+input[type="password"] {
+  border-radius: 7px;
+  border: 1px solid gray;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  width: 25%;
+}
+button {
+  padding: 15px;
+
+  border-radius: 7px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+}
+.btn-group {
+  display: flex;
+  gap: 0.3rem;
+}
+.login {
+  width: 27%;
+}
+.remember {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
